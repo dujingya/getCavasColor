@@ -73,8 +73,6 @@
     clipcanvas.height = height;
     drawcanvas.width = width;
     drawcanvas.height = height;
-
-
     var clipCtx = drawcanvas.getContext("2d");
     var clipImg = document.createElement("img");
     clipImg.crossOrigin = "anonymous";
@@ -86,8 +84,6 @@
         var y = Math.floor((height - this.height)/2);
         clipCtx.drawImage(this,0,0,timg.width,timg.height,x,y,this.width,this.height);
     }
-
-
     var ctx = clipcanvas.getContext("2d");
     ctx.fillStyle = 'rgba(0,0,0,0.6)';
     ctx.strokeStyle="green";
