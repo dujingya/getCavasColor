@@ -38,7 +38,7 @@
 </head>
 <body>
 <h2>点击图片任意位置</h2>
-<img id="img" src="./bg.png" alt="">
+<!--<img src="http://a0.att.hudong.com/27/10/01300000324235124757108108752.jpg">-->
 <h3 id="output"></h3>
 <script>
     window.addEventListener('load', function () {
@@ -97,17 +97,24 @@
             cursor.style.left = x - 4 + 'px';
             cursor.style.top = y - 4 + 'px';
         }
-        var img = document.getElementById('img');
+        // var img = document.getElementById('img');
         var output = document.getElementById('output');
-        var canvas = draw(img);
-        img.addEventListener('click', function (e) {
-            var x = e.offsetX;
-            var y = e.offsetY;
-            setCursor(e.pageX, e.pageY);
-            var color = (canvas.getColor(x, y)).rgba;
-            document.body.style.background = color;
-            output.innerHTML = '坐标点颜色：' + color;
-        });
+        var img = new Image();
+        img.crossOrigin = '';
+        img.onload = function () {
+            document.body.appendChild(img)
+            var canvas = draw(img);
+            img.addEventListener('click', function (e) {
+                var x = e.offsetX;
+                var y = e.offsetY;
+                setCursor(e.pageX, e.pageY);
+                var color = (canvas.getColor(x, y)).rgba;
+                document.body.style.background = color;
+                output.innerHTML = '坐标点颜色：' + color;
+            });
+        };
+        // img.src = 'http://a0.att.hudong.com/27/10/01300000324235124757108108752.jpg'
+        img.src = './bg.jpg'
     });
 </script>
 </body>
