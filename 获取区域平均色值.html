@@ -78,10 +78,11 @@
     clipImg.crossOrigin = "anonymous";
     clipImg.src = url;
     var timg = clipImg.cloneNode();
-    wrap.appendChild(clipImg);
+    // wrap.appendChild(clipImg);
     clipImg.onload = function(){
         var x = Math.floor((width - this.width)/2);
         var y = Math.floor((height - this.height)/2);
+        console.log(timg.width, timg.height, x, y, this.width,this.height )
         clipCtx.drawImage(this,0,0,timg.width,timg.height,x,y,this.width,this.height);
     }
     var ctx = clipcanvas.getContext("2d");
@@ -175,10 +176,9 @@
                 r += data[i * 4];
                 g += data[i * 4 + 1];
                 b += data[i * 4 + 2];
-                a += data[i * 4 + 3];
             }
             //获得平均值
-            var rgba = 'rgba('+ parseInt(r/fxs) +','+ parseInt(g/fxs) +','+ parseInt(b/fxs) +','+ parseInt(a/fxs) +')';
+            var rgba = 'rgba('+ parseInt(r/fxs) +','+ parseInt(g/fxs) +','+ parseInt(b/fxs)+')';
             console.log(rgba)
             document.documentElement.style.backgroundColor = rgba;
         }
