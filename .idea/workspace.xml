@@ -19,11 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/获取区域平均色值.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="133" column="16" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-                <element signature="e#4019#5245#0" />
               </folding>
             </state>
           </provider>
@@ -119,7 +118,8 @@
       <workItem from="1592462616683" duration="553000" />
       <workItem from="1592544848396" duration="549000" />
       <workItem from="1592545605333" duration="3381000" />
-      <workItem from="1592551748009" duration="2407000" />
+      <workItem from="1592551748009" duration="2423000" />
+      <workItem from="1592807435397" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="用canvas获取图片上某个坐标位置的色值">
       <created>1592463155803</created>
@@ -156,11 +156,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592547536667</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="用canvas获取图片上某个坐标位置的色值">
+      <created>1592554203043</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592554203043</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6890000" />
+    <option name="totallyTimeSpent" value="6961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1710" y="145" width="1499" height="900" extended-state="0" />
@@ -199,11 +206,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/获取区域平均色值.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="133" column="16" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="16" />
+        <state relative-caret-position="357">
+          <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#4019#5245#0" />
           </folding>
         </state>
       </provider>
